@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f58e004-5a5e-48ea-82f6-1394b8c6ccbc" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-service/src/main/java/com/anmory/common/aspect/LogOperationAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-service/src/test/java/com/anmory/test/LogOperationAspectTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-service/src/main/java/com/anmory/common/config/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-service/src/main/java/com/anmory/common/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-service/src/main/java/com/anmory/common/util/Result.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-service/pom.xml" afterDir="false" />
     </list>
@@ -73,6 +72,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.anmory.common.config" />
+      <recent name="com.anmory.common.util" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="LogOperationAspectTest.testLogRequestWithSensitiveData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="common-service" />
@@ -112,7 +117,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1772378321740</updated>
-      <workItem from="1772378322820" duration="10540000" />
+      <workItem from="1772378322820" duration="13298000" />
     </task>
     <servers />
   </component>
