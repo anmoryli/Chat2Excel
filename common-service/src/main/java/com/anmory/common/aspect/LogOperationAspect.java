@@ -64,7 +64,7 @@ public class LogOperationAspect {
         }
 
         // 5. 响应的结果需要返回去
-        return request;
+        return result;
     }
 
     /**

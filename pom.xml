@@ -10,6 +10,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>common-service</module>
+        <module>gateway-service</module>
+        <module>user-service</module>
     </modules>
 
     <parent>

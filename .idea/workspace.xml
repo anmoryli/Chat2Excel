@@ -5,11 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f58e004-5a5e-48ea-82f6-1394b8c6ccbc" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/common-service/src/main/java/com/anmory/common/config/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-service/src/main/java/com/anmory/common/config/MybatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-service/src/main/java/com/anmory/common/util/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/CoolRequestEnvironmentPersistentComponent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-service/src/main/java/com/anmory/common/filter/GatewayTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-service/src/main/java/com/anmory/common/service/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-service/src/main/java/com/anmory/common/service/RedisService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-service/src/main/java/com/anmory/common/service/impl/EmailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-service/src/main/java/com/anmory/common/service/impl/RedisServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/anmory/gateway/GatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/anmory/gateway/config/GateWayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/anmory/gateway/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/anmory/gateway/filter/JwtAuthGatewayFilterFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/anmory/user/UserApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/anmory/user/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/anmory/user/dto/request/SendCodeRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/anmory/user/dto/response/SendCodeResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/anmory/user/entity/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/anmory/user/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/anmory/user/service/VerificationCodeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/anmory/user/service/impl/VerificationCodeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-service/src/main/java/com/anmory/common/aspect/LogOperationAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-service/src/main/java/com/anmory/common/aspect/LogOperationAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +52,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -59,10 +88,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.LogOperationAspectTest.testLogRequestWithSensitiveData.executor": "Run",
+    "Maven.common-service [clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.GatewayApplication.executor": "Run",
+    "Spring Boot.UserApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Code/Project/SpringBoot/Chat2Excel",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,15 +107,34 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Code\Project\SpringBoot\Chat2Excel" />
+      <recent name="D:\Code\Project\SpringBoot\Chat2Excel\user-service\src\main\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.anmory.common.config" />
-      <recent name="com.anmory.common.util" />
+      <recent name="com.anmory.user.entity" />
+      <recent name="com.anmory.user.service" />
+      <recent name="com.anmory.user.dto.response" />
+      <recent name="com.anmory.user.dto.request" />
+      <recent name="com.anmory.gateway.filter" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.UserApplication">
     <configuration name="LogOperationAspectTest.testLogRequestWithSensitiveData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="common-service" />
       <extension name="coverage">
@@ -95,8 +151,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="gateway-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.anmory.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.anmory.user.UserApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.anmory.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="JUnit.LogOperationAspectTest.testLogRequestWithSensitiveData" />
       </list>
     </recent_temporary>
@@ -117,7 +194,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1772378321740</updated>
-      <workItem from="1772378322820" duration="13298000" />
+      <workItem from="1772378322820" duration="35654000" />
     </task>
     <servers />
   </component>
