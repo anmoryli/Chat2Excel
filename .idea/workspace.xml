@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f58e004-5a5e-48ea-82f6-1394b8c6ccbc" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/common-service/src/main/java/com/anmory/common/util/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/anmory/user/dto/request/AuthRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/anmory/user/dto/request/ChangePasswordRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/anmory/user/dto/response/AuthResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/anmory/user/dto/response/ChangePasswordResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/anmory/user/dto/response/UserInfoResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/anmory/user/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/anmory/user/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e83fc9c5-7307-448a-bcac-24da3dd8fb18.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e83fc9c5-7307-448a-bcac-24da3dd8fb18.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-service/src/main/java/com/anmory/common/service/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-service/src/main/java/com/anmory/common/service/RedisService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-service/src/main/java/com/anmory/common/service/impl/RedisServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-service/src/main/java/com/anmory/common/service/impl/RedisServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/anmory/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/anmory/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/anmory/user/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/anmory/user/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/anmory/user/service/impl/VerificationCodeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/anmory/user/service/impl/VerificationCodeServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="0f58e004-5a5e-48ea-82f6-1394b8c6ccbc" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,11 +95,11 @@
       <recent name="D:\Code\Project\SpringBoot\Chat2Excel\user-service\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.anmory.file" />
+      <recent name="com.anmory.common" />
       <recent name="com.anmory.user.dto.response" />
       <recent name="com.anmory.user.dto.request" />
       <recent name="com.anmory.user.entity" />
-      <recent name="com.anmory.user.service" />
-      <recent name="com.anmory.gateway.filter" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -191,7 +170,7 @@
       <option name="presentableId" value="Default" />
       <updated>1772378321740</updated>
       <workItem from="1772378322820" duration="48891000" />
-      <workItem from="1772758791984" duration="6821000" />
+      <workItem from="1772758791984" duration="7339000" />
     </task>
     <servers />
   </component>
