@@ -37,7 +37,7 @@ public class VerificationCodeServiceImpl implements VerificationCodeService {
             user = new UserEntity();
             user.setId(0L); // id为0代表的是新用户
             user.setUserName(email);
-            log.info("新用户信息{}", user);
+            log.info("[新用户信息], 信息：{}", user);
         }
 
         // 验证码信息写进redis中

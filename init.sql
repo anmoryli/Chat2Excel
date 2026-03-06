@@ -10,8 +10,6 @@ CREATE TABLE users
     INDEX idx_username (username)
 ) COMMENT '用户表' CHARSET = utf8mb4  AUTO_INCREMENT = 10000001;
 
-
---文件服务相关的sql
 -- 创建文件表
 drop table if exists `files`;
 CREATE TABLE files

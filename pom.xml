@@ -12,6 +12,7 @@
         <module>common-service</module>
         <module>gateway-service</module>
         <module>user-service</module>
+        <module>file-service</module>
     </modules>
 
     <parent>

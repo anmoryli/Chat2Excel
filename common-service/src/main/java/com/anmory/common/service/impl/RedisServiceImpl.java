@@ -101,10 +101,119 @@ public class RedisServiceImpl implements RedisService {
         log.info("[redis验证码删除成功], 验证码{} 已经删除", code);
     }
 
+    /**
+     * 存储用户令牌
+     * @param token 令牌
+     * @param userId 用户ID
+     * @param username 用户名
+     * @param expireSeconds 过期时间
+     */
+    @Override
+    public void storeToken(String token, Long userId, String username, long expireSeconds) throws JsonProcessingException {
+        // 1. 创建key
+        String key = TOKEN_PREFIX + token;
+        TokenInfo tokenInfo = new TokenInfo(userId, username);
+        try {
+            String value = objectMapper.writeValueAsString(tokenInfo);
+            stringRedisTemplate.opsForValue().set(key, value, expireSeconds, TimeUnit.SECONDS);
+        } catch (JsonProcessingException e) {
+            log.error("[Redis令牌存储失败 {} {}]", token, e.getMessage());
+        }
+    }
+
+    /**
+     * 存储用户活跃令牌
+     * @param userId 用户ID
+     * @param token 令牌
+     * @param expireSeconds 过期时间
+     */
+    @Override
+    public void storeUserActiveToken(Long userId, String token, long expireSeconds) {
+        String key = USER_SESSION_PREFIX + userId;
+        stringRedisTemplate.opsForValue().set(key, token, expireSeconds, TimeUnit.SECONDS);
+    }
+
+    /**
+     * 获取用户令牌
+     * @param userId 用户ID
+     * @return 令牌
+     */
+    @Override
+    public String getUserToken(Long userId) {
+        String key = USER_SESSION_PREFIX + userId;
+        return stringRedisTemplate.opsForValue().get(key);
+    }
+
+    /**
+     * 判断用户是否登录
+     * @param userId 用户ID
+     * @return true:已登录，false:未登录
+     */
+    @Override
+    public boolean isUserLogged(Long userId) {
+        String key = USER_SESSION_PREFIX + userId;
+        return stringRedisTemplate.hasKey(key);
+    }
+
+    /**
+     * 获取用户ID通过令牌
+     *
+     */
+    @Override
+    public Long getUserIdByAuthorization(String authorization) {
+        // 1. 获取原生令牌
+        String token = authorization.replaceFirst("(?i)^Bearer", "").trim();
+        String key = TOKEN_PREFIX + token;
+        String value = stringRedisTemplate.opsForValue().get(key);
+
+        if (value != null) {
+            try {
+                TokenInfo tokenInfo = objectMapper.readValue(value, TokenInfo.class);
+                return tokenInfo.getUserId();
+            } catch (JsonProcessingException e) {
+                log.error("[redis令牌获取用户ID失败], 令牌{}", token);
+            }
+        }
+        return null;
+    }
+
+    /**
+     * 删除用户令牌
+     * @param authorization 令牌
+     */
+    @Override
+    public void removeAuthorization(String authorization) {
+        // 1. 获取原生的token
+        String token = authorization.replaceFirst("(?i)^Bearer ", "").trim();
+        // 2. 删除用户令牌缓存
+        String tokenKey = TOKEN_PREFIX + token;
+        Long userId = getUserIdByAuthorization(token);
+        stringRedisTemplate.delete(tokenKey);
+        // 3. 删除活跃用户令牌缓存
+        String userKey = USER_SESSION_PREFIX + userId;
+        stringRedisTemplate.delete(userKey);
+    }
+
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
     private static class CodeInfo{
+
+        /**
+         * 用户ID
+         */
+        private Long userId;
+
+        /**
+         * 用户名：邮箱或者用户名
+         */
+        private String userName;
+    }
+
+    @Data
+    @AllArgsConstructor
+    @NoArgsConstructor
+    private static class TokenInfo{
 
         /**
          * 用户ID
